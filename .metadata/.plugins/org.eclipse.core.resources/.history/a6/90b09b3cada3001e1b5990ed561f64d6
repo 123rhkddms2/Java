@@ -1,0 +1,30 @@
+package sub2;
+
+/**
+ * 날짜 : 2023/12/26
+ * 이름 : 김광은
+ * 내용 : Java 자료형 실습하기
+ */
+public class DataTypeTest {
+	
+	public static void main(String[] args) {
+	
+		//정수형		
+		int a;
+		
+		//실수형
+		double b;
+		
+		//논리형
+		boolean c;
+		
+		//문자형
+		char d;
+		
+		//문자열
+		String e;
+		
+		
+	}
+	
+}
