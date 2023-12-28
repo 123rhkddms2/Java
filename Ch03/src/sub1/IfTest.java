@@ -10,6 +10,7 @@ public class IfTest {
 	
 	public static void main(String[] args) {
 		
+		
 		//if
 		int num1 = 1;
 		int num2 = 2;
