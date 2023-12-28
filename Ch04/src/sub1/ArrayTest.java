@@ -1,0 +1,65 @@
+package sub1;
+
+/*
+ *  날짜 : 2023/12/28
+ *  이름 : 김광은
+ *  내용 : 배열 실습하기
+ */
+public class ArrayTest {
+	public static void main(String[] args) {
+		
+		//배열 
+		int[] arr1 = {1, 2, 3, 4, 5};
+		char[] arr2 = {'A', 'B', 'C'};
+		String[] arr3 = {"서울", "대전", "대구", "부산", "광주"};
+		
+		//원소 출력
+		System.out.println("arr1[0] : " + arr1[0]);
+		System.out.println("arr1[2] : " + arr1[2]);
+		System.out.println("arr1[3] : " + arr1[3]);
+		System.out.println("arr2[2] : " + arr2[2]);
+		System.out.println("arr3[3] : " + arr3[3]);
+	
+		//배열 길이
+		System.out.println("arr1 원소갯수 : " + arr1.length);
+		System.out.println("arr2 원소갯수 : " + arr2.length);
+		System.out.println("arr3 원소갯수 : " + arr3.length);
+
+		//배열 반복문
+		for(int i = 0; i<arr1.length; i++){
+			
+			System.out.print(arr1[i] + " ");
+		}
+		System.out.println();
+		
+		for(int n : arr1) {
+			System.out.print(n + " ");
+		}
+		//arr2 전체출력
+		System.out.println();
+		for(char c : arr2) {
+			System.out.print(c + " ");
+		}
+		//arr3 전체출력
+		System.out.println();
+		for(String s : arr3) {
+			System.out.print(s + " ");
+		}
+		System.out.println();
+		// 1차원
+		int[] scores= { 80, 60, 78, 62, 92};
+		int sum = 0;
+		
+		for(int score : scores) {
+			sum += score;
+			;
+			
+		}
+		System.out.println("scores 전체합 : " + sum);
+		
+		
+		// 2차원
+		
+		// 3차원
+	}
+}
