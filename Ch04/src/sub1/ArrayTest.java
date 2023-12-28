@@ -72,10 +72,10 @@ public class ArrayTest {
 			for(int b=0; b<4; b++) {
 				System.out.println("arr2d[" + a + "][" + b + "] : " + arr2d[a][b]);
 				
+				
 			}
 			
 		}
-	
 		// 3차원
 		int[][][] arr3d = {
 			    {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}},
