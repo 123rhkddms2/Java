@@ -77,26 +77,22 @@ public class ArrayTest {
 		}
 	
 		// 3차원
-				int[][][] arr3d = {{{1,2,3},
-									{4,5,6},
-									{7,8,9}},
-								   {{10,11,12}, 
-									{13,14,15},
-									{16,17,18}},
-								   {{19,20,21}, 
-									{22,23,24}, 
-									{25,26,27}}};
-				
-				System.out.println("arr3d[0][1][0] : " + arr3d[0][1][1]);	// 5
-				System.out.println("arr2d[1][2][1] : " + arr3d[1][2][1]);	// 17
-				System.out.println("arr2d[2][2][0] : " + arr3d[2][2][0]);	// 25
-				
-				for(int c=0; c<3; c++) {
-					for(int d=0; d<3; d++) {
-						for(int e=0; d<4; d++) {
-						System.out.printf("arr3d[%d][%d][%d] : %d\n", c, d, c, arr3d[c][d][e]);
-						}
-					}
-				}
+		int[][][] arr3d = {
+			    {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}},
+			    {{10, 11, 12}, {13, 14, 15}, {16, 17, 18}},
+			    {{19, 20, 21}, {22, 23, 24}, {25, 26, 27}}
+			};
+
+			System.out.println("arr3d[0][1][0] : " + arr3d[0][1][1]);    // 5
+			System.out.println("arr3d[1][2][1] : " + arr3d[1][2][1]);    // 17
+			System.out.println("arr3d[2][2][0] : " + arr3d[2][2][0]);    // 25
+
+			for (int c = 0; c < 3; c++) {
+			    for (int d = 0; d < 3; d++) {
+			        for (int e = 0; e < 3; e++) {
+			            System.out.printf("arr3d[%d][%d][%d] : %d\n", c, d, e, arr3d[c][d][e]);
+			        }
+			    }
+			}
 	}
 }
