@@ -30,7 +30,7 @@ public class DataTypeTest {
 		double var2 = 0.123456789123456789;
 		
 		System.out.println("var1 : " + var1);
-		System.out.println("var2 : " + var2);
+		System.out.println("var2 : " + var2); 
 		
 		//논리형
 		boolean value1 = true;

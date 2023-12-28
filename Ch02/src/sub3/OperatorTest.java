@@ -28,7 +28,7 @@ public class OperatorTest {
 		System.out.println("result2 = " + result2);
 		System.out.println("result3 = " + result3);
 		System.out.println("result4 = " + result4);
-		System.out.println("result5 = " + result5);
+		System.out.println("result5 = " + result5); 
 		
 		//증감연산자
 		int num = 0;
