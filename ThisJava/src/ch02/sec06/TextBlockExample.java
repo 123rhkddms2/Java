@@ -1,3 +1,4 @@
+/*
 package ch02.sec06;
 
 public class TextBlockExample {
@@ -14,3 +15,4 @@ public class TextBlockExample {
 		System.out.println(str);
 	}
 }
+*/
