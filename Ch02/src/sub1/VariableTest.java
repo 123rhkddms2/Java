@@ -17,6 +17,7 @@ public class VariableTest {
 	
 	public static void main(String[] args) {
 	
+		
 		// 변수
 		int a = 3;
 		int b = 7;
