@@ -1,5 +1,7 @@
 package test2;		//못풀었음
 
+import java.util.Arrays;
+
 /*
  * 날짜 : 2023/12/29
  * 이름 : 김광은
@@ -31,6 +33,7 @@ public class Test04 {
 					arr[i] = temp;
 				}
 			}
+			System.out.println(Arrays.toString(arr));
 		}
 		
 		// 정렬된 배열 출력하기

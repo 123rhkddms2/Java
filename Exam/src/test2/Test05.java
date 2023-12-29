@@ -18,6 +18,7 @@ import java.util.Scanner;
   */
 public class Test05 {
 	public static void main(String[] args) {
+		
 		Scanner sc = new Scanner(System.in);
 		
 		int arr[] = {5, 10, 18, 22, 35, 55, 75, 103, 152};
@@ -34,10 +35,10 @@ public class Test05 {
 			int mid = (start + end) / 2;
 			
 			if(arr[mid] > value) {
-				end = □□□□□□□;
+				end = mid -1 ;
 			}
 			else if(arr[mid] < value) {
-				start = □□□□□□□;
+				start = mid + 1;
 			}
 			else {
 				loc = mid;
@@ -54,18 +55,4 @@ public class Test05 {
 		}
 		sc.close();
 	}
-}
-		
-			
-			
-			
-			
-			
-			
-			
-			
-			
-		}
-	}
-
 }
