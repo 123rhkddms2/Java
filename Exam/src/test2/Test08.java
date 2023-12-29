@@ -13,11 +13,11 @@ public class Test08 {
 		System.out.println("5! = "  +factorial(5) );
 	}
 	
-	public static int factorial(int t) {
+	public static int factorial(int n) {
 		
 		if(n<=1) {
 			return 1;
 		}
-		return n*factorial(□□□□);
+		return n*factorial(n-1);
 	}
 }

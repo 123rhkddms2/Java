@@ -38,7 +38,7 @@ public class Test09 {
 			return b;
 		}
 		else {
-			return gcd(b, □□□);
+			return gcd(b, a%b);
 		}
 	}
 }

@@ -17,6 +17,6 @@ public class Test10 {
 			return n;
 		}
 		
-		return fibo(n+1) + fibo(n);
+		return fibo(n-2) + fibo(n-1);
 	}
 }
