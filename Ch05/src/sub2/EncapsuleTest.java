@@ -3,7 +3,7 @@ package sub2;
 /*
  * 날짜 : 2024/01/02
  * 이름 : 김광은
- * 내용 : JAVA 클래스 실습하기
+ * 내용 : 캡슐화 실습하기
  */
 public class EncapsuleTest {
 	
