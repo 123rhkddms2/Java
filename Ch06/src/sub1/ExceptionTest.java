@@ -59,9 +59,46 @@ public class ExceptionTest {
 			e.printStackTrace();
 		}
 		
+		//예외상황4. 잘못된 캐스팅
+		Animal a1 = new Tiger();	//업캐스팅
+		Animal a2 = new Eagle();
+		Animal a3 = new Shark();
 		
 		
+		try {
+		Tiger tiger = (Tiger) a1;	//다운캐스팅
+		Shark shark = (Shark) a2;
+		
+		tiger.move();
+		tiger.hunt();
+		
+		shark.move();
+		shark.hunt();
+		
+		}catch ( ClassCastException e) {
+			e.printStackTrace();
+		}
+		
+		
+		/////////////////////////////
 		//일반 예외(컴파일 타임)
+		/////////////////////////////
+		
+		try {
+			Class animal = Class.forName("sub1.Eagle");
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}finally {
+			//예외처리 발생여부에 상관없이 마지막에 항상 실행되는 코드
+			System.gc(); // 메모리 정리
+			
+			System.out.println("finally 실행...");
+		}
+		
+		System.out.println("프로그램 정상 종료...");
 	}
-
 }
+
+
+
+
