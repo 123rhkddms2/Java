@@ -38,7 +38,7 @@ public class HashMapTest {
 		}
 		
 		// List Map을 이용한 자료구조
-		List<?> myList = new ArrayList<>();
+		List<Map<Integer, Apple>> myList = new ArrayList<>();
 		
 		Map<Integer, Apple> m1 = new HashMap<>();
 		m1.put(101, new Apple("한국", 3000));
@@ -58,4 +58,16 @@ public class HashMapTest {
 		myList.add(m1);
 		myList.add(m2);
 		myList.add(m3);
+		
+		//한국 사과
+		Map<Integer, Apple> resultMap1 = myList.get(0);
+		Apple apple1 = resultMap1.get(101);
+		apple1.show();
+		
+		//호주 사과
+		myList.get(1).get(203).show();
+		
+		//태국 사과
+		myList.get(2).get(302).show();
+	}
 }
