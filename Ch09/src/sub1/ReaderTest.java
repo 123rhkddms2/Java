@@ -46,7 +46,6 @@ public class ReaderTest {
 		} catch (Exception e) {
 			e.printStackTrace();
 		} 
-		
 		System.out.println("프로그램 종료...");
 	}
 }
