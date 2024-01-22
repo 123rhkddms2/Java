@@ -6,6 +6,7 @@ public class User1 {
 	private String birth;
 	private String hp;
 	private int age;
+	
 	public String getUid() {
 		return uid;
 	}
