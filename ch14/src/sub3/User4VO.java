@@ -1,13 +1,11 @@
 package sub3;
 
 public class User4VO {
-	
 	String uid;
 	String name;
-	String Gender;
-	int age;
+	String gender;
+	int	   age;
 	String hp;
-	String addr;
 	
 	public String getUid() {
 		return uid;
@@ -22,10 +20,10 @@ public class User4VO {
 		this.name = name;
 	}
 	public String getGender() {
-		return Gender;
+		return gender;
 	}
 	public void setGender(String gender) {
-		Gender = gender;
+		this.gender = gender;
 	}
 	public int getAge() {
 		return age;
@@ -45,5 +43,5 @@ public class User4VO {
 	public void setAddr(String addr) {
 		this.addr = addr;
 	}
-
+	String addr;
 }

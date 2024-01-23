@@ -24,32 +24,33 @@ import java.util.List;
 
 public class PreparedSelectTest {
 	public static void main(String[] args) {
-		//DB정보
+		
+		// DB정보
 		String host = "jdbc:mysql://127.0.0.1:3306/studydb";
 		String user = "123rhkddms2";
 		String pass = "1234";
 		
-		// 결과 처리 리스트
+		//리스트 생성
 		List<User4VO> users = new ArrayList<>();
 		
 		try {
 			// 1단계 - JDBC 드라이버 로드
 			Class.forName("com.mysql.cj.jdbc.Driver");
-						
-			// 2단계 - DB 접속
+			
+			// 2단계 - DB 연결
 			Connection conn = DriverManager.getConnection(host, user, pass);
 			
 			// 3단계 - SQL 실행객체 생성
-			String sql = "SELECT * FROM `User4`";
-			PreparedStatement psmt = conn.prepareStatement(sql);
+			String sql = "select * from `User4`";
+			PreparedStatement pstm = conn.prepareStatement(sql);
 			
 			// 4단계 - SQL 실행
-			ResultSet rs = psmt.executeQuery();
+			ResultSet rs = pstm.executeQuery();
 			
 			// 5단계 - 실행 처리(SELECT 경우)
 			while(rs.next()) {
-				// VO 객체 생성 및 초기화
 				User4VO vo = new User4VO();
+				
 				vo.setUid(rs.getString(1));
 				vo.setName(rs.getString(2));
 				vo.setGender(rs.getString(3));
@@ -57,23 +58,22 @@ public class PreparedSelectTest {
 				vo.setHp(rs.getString(5));
 				vo.setAddr(rs.getString(6));
 				
-				// 리스트 추가
+				//리스트 추가
 				users.add(vo);
-				
 			}
+			
+			
 			
 			
 			// 6단계 - DB 종료
 			rs.close();
-			psmt.close();
+			pstm.close();
 			conn.close();
 			
 			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
-		// 결과(리스트) 출력
 		for(User4VO vo : users) {
 			System.out.printf("%s, %s, %s, %d, %s, %s\n", vo.getUid(),
 														  vo.getName(),
@@ -81,7 +81,7 @@ public class PreparedSelectTest {
 														  vo.getAge(),
 														  vo.getHp(),
 														  vo.getAddr());
-		}
-		System.out.println("Select 완료...");
+			}
+	System.out.println("Select 완료...");
 	}
 }
