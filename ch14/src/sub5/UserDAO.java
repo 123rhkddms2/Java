@@ -21,8 +21,8 @@ public class UserDAO {
 	
 	// DB정보
 	private final String HOST = "jdbc:mysql://127.0.0.1:3306/studydb";
-	private final String USER = "chhak";
-	private final String PASS = "abc1234";
+	private final String USER = "123rhkddms2";
+	private final String PASS = "1234";
 	
 	// DB자원
 	private Connection conn = null;
