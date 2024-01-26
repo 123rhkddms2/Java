@@ -1,13 +1,12 @@
 package com.myshop.dto;
 
 public class CustomerDTO {
-	
+
 	private String custId;
 	private String name;
 	private String hp;
 	private String addr;
 	private String rdate;
-	
 	public String getCustId() {
 		return custId;
 	}
@@ -38,7 +37,6 @@ public class CustomerDTO {
 	public void setRdate(String rdate) {
 		this.rdate = rdate;
 	}
-	
 	@Override
 	public String toString() {
 		return "CustomerDTO [custId=" + custId + ", name=" + name + ", hp=" + hp + ", addr=" + addr + ", rdate=" + rdate

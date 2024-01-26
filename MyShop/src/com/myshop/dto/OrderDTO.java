@@ -1,7 +1,7 @@
 package com.myshop.dto;
 
 public class OrderDTO {
-	
+
 	private int orderNo;
 	private String orderId;
 	private int orderProduct;
@@ -10,7 +10,7 @@ public class OrderDTO {
 	
 	// 추가필드
 	private String prodName;
-	private int Price;
+	private int price;
 	private String company;
 	
 	public String getProdName() {
@@ -19,19 +19,20 @@ public class OrderDTO {
 	public void setProdName(String prodName) {
 		this.prodName = prodName;
 	}
+	
 	public int getPrice() {
-		return Price;
+		return price;
 	}
 	public void setPrice(int price) {
-		Price = price;
+		this.price = price;
 	}
+	
 	public String getCompany() {
 		return company;
 	}
 	public void setCompany(String company) {
 		this.company = company;
 	}
-	
 	
 	public int getOrderNo() {
 		return orderNo;
@@ -63,15 +64,15 @@ public class OrderDTO {
 	public void setOrderDate(String orderDate) {
 		this.orderDate = orderDate;
 	}
-	
 	@Override
 	public String toString() {
-		return orderNo + ", "
-				+ orderId + ", "
-				+ orderProduct + ", "
-				+ prodName + ", "
-				+ price + ", "
-				+ orderCount + ", "
-				+ orderDate
+		return orderNo + "," 
+				+ orderId + "," 
+				+ orderProduct + "," 
+				+ prodName + "," 
+				+ price + "," 
+				+ company + "," 
+				+ orderCount + "," 
+				+ orderDate;
 	}
 }

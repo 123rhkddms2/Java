@@ -38,7 +38,6 @@ public class ProductDTO {
 	public void setCompany(String company) {
 		this.company = company;
 	}
-	
 	@Override
 	public String toString() {
 		return "ProductDTO [prodNo=" + prodNo + ", prodName=" + prodName + ", stock=" + stock + ", price=" + price
